@@ -11,8 +11,6 @@ A pretty simple implementation of a linked list in JS to learn more about how th
 - Remove last element of list with `pop()`
 - Return true if value is found in the list with `contains(value)`
 - Return index of node containing value or null if not found with `find(value)`
-- Get string representation of linked list with `toString()`. Returns in the format of `( value ) -> ( value ) -> ( value ) -> null`
-
-## Features not yet implemented
 - Insert a new node with specified `value` at `index` with `insertAt(value, index)`
 - Remove a node at specified `index` with `removeAt(index)`
+- Get string representation of linked list with `toString()`. Returns in the format of `( value ) -> ( value ) -> ( value ) -> null`

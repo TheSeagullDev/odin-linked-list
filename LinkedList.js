@@ -93,6 +93,37 @@ export default class LinkedList {
 		return null;
     }
 
+    insertAt(value, index) {
+        if(index > this.size() || index < 0) {
+            return;
+        }
+        else if(index == 0) {
+            this.head = new Node(value, this.head);
+            return;
+        }
+        let node = this.head;
+        for(let i = 0; i < index - 1; i++) {
+            node = node.nextNode;
+        }
+        node.nextNode = new Node(value, node.nextNode);
+    }
+
+    removeAt(index) {
+        if(index >= this.size() || index < 0) {
+            return;
+        }
+        else if(index == 0) {
+            this.head = this.head.nextNode;
+        }
+        else {
+            let node = this.head;
+            for(let i = 0; i < index - 1; i++) {
+                node = node.nextNode;
+            }
+            node.nextNode = node.nextNode.nextNode;
+        }
+    }
+
     toString() {
         let string = ``;
         if(this.head.value == null) {
