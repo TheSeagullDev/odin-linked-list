@@ -20,6 +20,16 @@ export default class LinkedList {
         }
     }
 
+    size() {
+        let currentSize = 0;
+        let node = this.head;
+        while(node != null) {
+            currentSize++;
+            node = node.nextNode;
+        }
+        return currentSize;
+    }
+
     toString() {
         let string = ``;
         if(this.head.value == null) {
