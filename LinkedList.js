@@ -45,6 +45,19 @@ export default class LinkedList {
         return node;
     }
 
+    at(index) {
+        if(index >= this.size() || index < 0) {
+            return null;
+        }
+        else {
+            let node = this.head;
+            for(let i = 0; i < index; i++) {
+                node = node.nextNode;
+            }
+            return node;
+        }
+    }
+
     toString() {
         let string = ``;
         if(this.head.value == null) {

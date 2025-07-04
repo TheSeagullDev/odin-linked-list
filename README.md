@@ -7,10 +7,10 @@ A pretty simple implementation of a linked list in JS to learn more about how th
 - Get size of linked list with `size()`
 - Get head node of linked list with `head()`
 - Get tail node of linked list with `tail()`
+- Return node at index with `at(index)` NOTE: Currently does not support negative indexing
 - Get string representation of linked list with `toString()`. Returns in the format of `( value ) -> ( value ) -> ( value ) -> null`
 
 ## Features not yet implemented
-- Return node at index with `at(index)`
 - Remove last element of list with `pop()`
 - Return true if value is found in the list with `contains(value)`
 - Return index of node containing value or null if not found with `find(value)`
