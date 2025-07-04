@@ -58,6 +58,14 @@ export default class LinkedList {
         }
     }
 
+    pop() {
+        let node = this.head;
+        while(node.nextNode.nextNode != null) {
+            node = node.nextNode;
+        }
+        node.nextNode = null;
+    }
+
     toString() {
         let string = ``;
         if(this.head.value == null) {
