@@ -79,6 +79,20 @@ export default class LinkedList {
         return false;
     }
 
+    find(value) {
+        let node = this.head;
+        let index = 0;
+		while (node != null) {
+			if (node.value == value) {
+				return index;
+			} else {
+				node = node.nextNode;
+                index++;
+			}
+		}
+		return null;
+    }
+
     toString() {
         let string = ``;
         if(this.head.value == null) {
